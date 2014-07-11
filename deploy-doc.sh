@@ -32,6 +32,7 @@ mkdir /tmp/$PROJECT-temp
 cd /tmp/$PROJECT
 mkdocs build
 cp -R /tmp/cloudbreak/site /tmp/$PROJECT-temp
+rm -rf site/
 git checkout gh-pages
 cp -R /tmp/$PROJECT-temp/site/ .
 git add -A
