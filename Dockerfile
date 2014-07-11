@@ -15,7 +15,7 @@ RUN apt-get -y install git
 
 RUN pip install mkdocs
 
-COPY bootstrap /usr/local/lib/python2.7/dist-packages/mkdocs/themes/bootstrap
+ADD bootstrap /usr/local/lib/python2.7/dist-packages/mkdocs/themes/bootstrap
 
 ADD deploy-doc.sh /etc/deploy-doc.sh
 RUN chmod +x /etc/deploy-doc.sh
