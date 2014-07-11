@@ -11,6 +11,8 @@ RUN \
   apt-get -y upgrade && \
   apt-get install -y python python-pip python-dev build-essential libyaml-dev
 
+RUN apt-get -y install git
+
 RUN pip install mkdocs
 
 COPY bootstrap /usr/local/lib/python2.7/dist-packages/mkdocs/themes/bootstrap

@@ -6,7 +6,7 @@
 
 : ${COMMIT_NAME:=jenkins}
 : ${COMMIT_EMAIL:=jenkins@sequenceiq.com}
-: ${PROJECT:=jenkins@sequenceiq.com}
+: ${PROJECT:=cloudbreak}
 
 # private github key comes from env variable KEY
 # docker run -e KEY=XXXX
