@@ -36,4 +36,4 @@ git checkout gh-pages
 cp -R /tmp/$PROJECT-temp/site/ .
 git add -A
 git commit -m "updated documentation"
-git push origin gh-pages
+git push origin gh-pages --force
