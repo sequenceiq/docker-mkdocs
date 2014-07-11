@@ -10,5 +10,3 @@ docker-mkdocs
 | COMMIT_EMAIL | jenkins@sequenceiq.com        |    yes | the mail of the committer (default is jenkins) |
 | KEY | rsa-key        |    no | the rsa key for the authentication |
 | PROJECT | cloudbreak        |    yes | the project name on github (default is cloudbreak)|
-
-DEBUG 0/1  
