@@ -26,6 +26,7 @@ ssh -T -o StrictHostKeyChecking=no  git@github.com
 git config --global user.name "$COMMIT_NAME"
 git config --global user.email "$COMMIT_EMAIL"
 
+rm -rf /tmp/$PROJECT
 git clone git@github.com:sequenceiq/$PROJECT.git /tmp/$PROJECT
 mkdir /tmp/$PROJECT-temp
 cd /tmp/$PROJECT

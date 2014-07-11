@@ -1,4 +1,4 @@
-FROM tcnksm/rbenv
+FROM ubuntu:14.04
 MAINTAINER SequenceIQ
 
 RUN locale-gen en_US.UTF-8
