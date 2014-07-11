@@ -34,7 +34,7 @@ mkdocs build
 cp -R /tmp/cloudbreak/site /tmp/$PROJECT-temp
 rm -rf site/
 git checkout gh-pages
-cp -R /tmp/$PROJECT-temp/site/ .
+cp -R /tmp/$PROJECT-temp/site/* .
 git add -A
 git commit -m "updated documentation"
 git push origin gh-pages --force
