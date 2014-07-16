@@ -1,5 +1,7 @@
-docker-mkdocs
+Generate MkDocs documentation
 =============
+
+Docker container to generate nice documentation using [MkDocs](http://www.mkdocs.org/) - a project documentation with Markdown.
 
 ##Variables
 
