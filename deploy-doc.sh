@@ -31,7 +31,13 @@ git clone git@github.com:sequenceiq/$PROJECT.git /tmp/$PROJECT
 mkdir /tmp/$PROJECT-temp
 cd /tmp/$PROJECT
 mkdocs build
-cp -R /tmp/cloudbreak/site /tmp/$PROJECT-temp
+cp -R /tmp/$PROJECT/site/js /tmp/$PROJECT/site/guidelines/js
+cp -R /tmp/$PROJECT/site/less /tmp/$PROJECT/site/guidelines/less
+cp -R /tmp/$PROJECT/site/images /tmp/$PROJECT/site/guidelines/images
+cp -R /tmp/$PROJECT/site/img /tmp/$PROJECT/site/guidelines/img
+cp -R /tmp/$PROJECT/site/fonts /tmp/$PROJECT/site/guidelines/fonts
+cp -R /tmp/$PROJECT/site/css /tmp/$PROJECT/site/guidelines/css
+cp -R /tmp/$PROJECT/site /tmp/$PROJECT-temp
 rm -rf site/
 git checkout gh-pages
 cp -R /tmp/$PROJECT-temp/site/* .
